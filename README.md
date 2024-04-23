@@ -1,24 +1,49 @@
-# README
+# ToolBox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+Building a web application in my spare time using ROR(Ruby on Rails). I hope this project will also assist any beginners who want to come along on the Rails journey. Also all criticisms are welcomed to improve my Rails skills.
 
-* Ruby version
+## Create new ROR application.
 
-* System dependencies
+I will use the following for my ROR
 
-* Configuration
+- css: tailwind
+- database: postgresql
+- javascript: esbuild
 
-* Database creation
+```console
+  rails new toolbox --database=postgresql --javascript=esbuild --css=tailwind
+```
 
-* Database initialization
+## Setup Tailwind theme in tailwind.config.js
 
-* How to run the test suite
+```javascript
+theme: {
+  colors: {
+    primary: EEEEFF,
+    secondary: B2B1F0,
+    tertiary: 7674EF,
+    text: 01002C,
+  }
+}
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## application.html.erb the primary layout.
 
-* Deployment instructions
+application.html.erb contains 3 sections:
 
-* ...
+- header: contain navbar
+- main: all the features of the webapp
+- footer: links to faq, contacts, etc.
+
+|![application_mobile](https://github.com/anthonybchung/toolbox/assets/99620815/3c0783fb-d64a-4ba1-b6e2-691818b8e5d3)|![application_desktop](https://github.com/anthonybchung/toolbox/assets/99620815/b1c968d1-5616-43b3-a30a-d086381a820e)|
+| :---: | :---: |
+| Mobile | Desktop |
+
+
+
+
+
+
+
