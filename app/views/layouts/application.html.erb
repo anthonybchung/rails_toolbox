@@ -12,14 +12,17 @@
   </head>
 
   <body class='min-h-screen bg-tertiary text-text'>
-    <header class='h-11 w-full bg-primary px-3 flex flex-row justify-between items-center text-text'>
+    <header data-controller='nav' class='h-11 w-screen bg-primary px-3 text-text flex items-center justify-between'>
       <div class='text-secondary'>
         <%= link_to_unless_current 'Rails Journey', root_path, class: 'text-text' %>
       </div>
-      <nav class='flex flex-row justify-between'>
-        <ul class='flex'>
-          <li class='flex-1 mx-3 text-secondary'> <%= link_to_unless_current 'Features', features_path, class: 'text-text ' %></li>
-          <li class='flex-1 mx-3 text-secondary'> <%= link_to_unless_current 'Contact', contact_path, class: 'text-text'%> </li>
+      <button type='button' data-action='click->nav#toggle'>
+        click me
+      </button>
+      <nav data-nav-target='closed' class='bg-blue-600 absolute top-11 left-0 w-full h-0 overflow-hidden'>
+        <ul>
+          <li class='text-secondary md:inline-block'> <%= link_to_unless_current 'Features', features_path, class: 'text-text ' %></li>
+          <li class='text-secondary md:inline-block'> <%= link_to_unless_current 'Contact', contact_path, class: 'text-text'%> </li>
         </ul>
       </nav>
     </header>
