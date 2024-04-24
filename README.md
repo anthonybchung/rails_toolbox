@@ -21,13 +21,15 @@ I will use the following for my ROR
 ```javascript
 theme: {
   colors: {
-    primary: EEEEFF,
-    secondary: B2B1F0,
-    tertiary: 7674EF,
-    text: 01002C,
+    'primary': '#7674EF',
+    'secondary': '#B2B1F0',
+    'tertiary': '#EEEEFF',
+    'text': '#01002C',
   }
 }
 ```
+
+Don't forget to restart the server after modifying the config.js file.
 
 ## application.html.erb the primary layout.
 
@@ -40,6 +42,17 @@ application.html.erb contains 3 sections:
 |![application_mobile](https://github.com/anthonybchung/toolbox/assets/99620815/3c0783fb-d64a-4ba1-b6e2-691818b8e5d3)|![application_desktop](https://github.com/anthonybchung/toolbox/assets/99620815/b1c968d1-5616-43b3-a30a-d086381a820e)|
 | :---: | :---: |
 | Mobile | Desktop |
+
+## Controller: static_pages
+
+the StaticPages controller will be responsible for a visitor to browse the website.
+
+```console
+rails generate controller StaticPages home contact features
+```
+
+we will make **home.html.erb** the index root.
+
 
 
 

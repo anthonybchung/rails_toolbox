@@ -11,9 +11,21 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class='min-h-screen bg-tertiary'>
+    <header class='h-11 w-full bg-primary px-3 flex flex-row justify-between items-center text-text'>
+      <h1> Rails Journey </h1>
+      <nav class='flex flex-row justify-between'>
+        <ul class='flex'>
+          <li class='flex-1 mx-3'> features </li>
+          <li class='flex-1 mx-3'> contact </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container mx-auto mt-28 px-5 min-h-max">
       <%= yield %>
     </main>
+    <footer class='h-11 w-full bg-primary px-3 flex flex-row justify-end items-center bottom-0 absolute'>
+      Footer
+    </footer>
   </body>
 </html>
