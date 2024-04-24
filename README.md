@@ -53,8 +53,11 @@ rails generate controller StaticPages home contact features
 
 we will make **home.html.erb** the index root.
 
+## View: Responsive nav using stimulus.
 
-
+```console
+rails generate stimulus nav
+```
 
 
 

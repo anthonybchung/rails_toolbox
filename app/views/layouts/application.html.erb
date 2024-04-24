@@ -11,13 +11,15 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class='min-h-screen bg-tertiary'>
+  <body class='min-h-screen bg-tertiary text-text'>
     <header class='h-11 w-full bg-primary px-3 flex flex-row justify-between items-center text-text'>
-      <h1> Rails Journey </h1>
+      <div class='text-secondary'>
+        <%= link_to_unless_current 'Rails Journey', root_path, class: 'text-text' %>
+      </div>
       <nav class='flex flex-row justify-between'>
         <ul class='flex'>
-          <li class='flex-1 mx-3'> features </li>
-          <li class='flex-1 mx-3'> contact </li>
+          <li class='flex-1 mx-3 text-secondary'> <%= link_to_unless_current 'Features', features_path, class: 'text-text ' %></li>
+          <li class='flex-1 mx-3 text-secondary'> <%= link_to_unless_current 'Contact', contact_path, class: 'text-text'%> </li>
         </ul>
       </nav>
     </header>
