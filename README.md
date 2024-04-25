@@ -59,6 +59,19 @@ we will make **home.html.erb** the index root.
 rails generate stimulus nav
 ```
 
+The header element will container the stimulus controller.
+The button element will hold the action 
+The nav element will be change according to a state in the controller.
+```html
+<header data-controller='na'>
+  <button data-action='click->nav#toggle'>
+  <nav data-nav-tart='closed'>
+</header>
+```
+
+## Devise: Authentication and Authorization.
+
+
 
 
 
