@@ -81,8 +81,21 @@ rails generate devise User
 rails db:migrate
 ```
 
+*** to be revisited for styling ***
 
+## Golocation with Stimulus
 
+```console
+rails generate stimulus geolocation
+```
+
+### geolocation_controller.js
+
+```javascript
+geolocate(){
+  navigator.geolocation
+}
+```
 
 
 
