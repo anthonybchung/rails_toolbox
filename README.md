@@ -63,7 +63,7 @@ The header element will container the stimulus controller.
 The button element will hold the action 
 The nav element will be change according to a state in the controller.
 ```html
-<header data-controller='na'>
+<header data-controller='nav'>
   <button data-action='click->nav#toggle'>
   <nav data-nav-tart='closed'>
 </header>
@@ -71,6 +71,9 @@ The nav element will be change according to a state in the controller.
 
 ## Devise: Authentication and Authorization.
 
+```console
+gem 'devise', '~> 4.9', '>= 4.9.3'
+```
 
 
 

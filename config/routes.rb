@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
 
   # Controller: StaticPages
   get 'contact', to: 'static_pages#contact', as: 'contact'
