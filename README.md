@@ -75,6 +75,14 @@ The nav element will be change according to a state in the controller.
 gem 'devise', '~> 4.9', '>= 4.9.3'
 ```
 
+```console
+rails generate devise:install
+rails generate devise User
+rails db:migrate
+```
+
+
+
 
 
 

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+ # devise_for :users
+
+  resources :geolocations
 
   # Controller: StaticPages
   get 'contact', to: 'static_pages#contact', as: 'contact'
