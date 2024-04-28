@@ -1,8 +1,12 @@
   <h2>form start </h2>
 
-<div data-controller='geolocation'>
+<%
+=begin%>
+ <div data-controller='geolocation'>
   <button data-action='click->geolocation#geolocate'>Get Location </button>
-  <p data-geolocation-target='position'></p>
+  <p data-geolocation-target='position'></p> 
+<%
+=end%>
 
 
  <%
@@ -19,7 +23,15 @@
 <%
 =end%>
  
-</div>
+<%
+=begin%>
+ </div> 
+<%
+=end%>
 
  <h2>form end </h2>
-  <h1><%= @suburb %></h1>
+  <%
+=begin%>
+ <h1><%= @suburb %></h1> 
+<%
+=end%>
