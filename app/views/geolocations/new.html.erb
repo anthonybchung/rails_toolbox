@@ -1,10 +1,5 @@
-  <h2>form start </h2>
-
 <div data-controller='geolocation'>
   <button data-action='click->geolocation#geolocate'>Get Location </button>
-  <p data-geolocation-target='position'></p>
-
-
  <%= form_with url: geolocations_path do |form| %>
     <%= form.label :longitude %>
     <%= form.text_field :longitude, data:{'geolocation-target' => 'longitude'} %>
@@ -16,6 +11,4 @@
   <% end %>
  
 </div>
-
- <h2>form end </h2>
-  <h1><%= @suburb %></h1>
+<h1><%= @suburb %></h1>
