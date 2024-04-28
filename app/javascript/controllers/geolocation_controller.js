@@ -5,7 +5,7 @@ export default class extends Controller {
 
   static targets = ["position","longitude","latitude"]
   connect() {
-    console.log("hello geolocation")
+    console.log("hello geolocation!!!! I am new")
   }
 
   geolocate(){
