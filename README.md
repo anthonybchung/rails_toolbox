@@ -83,7 +83,7 @@ rails db:migrate
 
 *** to be revisited for styling ***
 
-## Golocation with Stimulus
+## Geolocation with Stimulus
 
 ```console
 rails generate stimulus geolocation
@@ -96,6 +96,10 @@ geolocate(){
   navigator.geolocation
 }
 ```
+
+### Form: Geolocation
+
+I will create a form that will pass the geo position to the controller and the controller will return the suburb I am in using ***Geocoder***
 
 
 

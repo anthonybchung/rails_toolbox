@@ -32,6 +32,9 @@ gem "jbuilder"
 # Devise authentication and authorization
 gem 'devise', '~> 4.9', '>= 4.9.3'
 
+# Geocoder
+gem 'geocoder', '~> 1.3', '>= 1.3.7'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
