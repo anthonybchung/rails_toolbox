@@ -3,4 +3,6 @@
 <div data-controller='geolocation'>
   <button data-action='click->geolocation#geolocate'>Get Location </button>
   <p data-geolocation-target='position'></p>
+
+  <%= link_to "New Geolocation",  new_geolocation_path, class: 'btn-primary'%>
 </div>
