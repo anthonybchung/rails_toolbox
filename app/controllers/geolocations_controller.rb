@@ -10,7 +10,7 @@ class GeolocationsController < ApplicationController
     @geolocation.latitude = params[:latitude].to_f
     address =  Geocoder.search([@geolocation.latitude,@geolocation.longitude]).first
     flash[:suburb]=address.suburb
-    # redirect_to new_geolocation_path
+    redirect_to new_geolocation_path
   end
 
   def new
