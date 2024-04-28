@@ -5,19 +5,19 @@
   <p data-geolocation-target='position'></p>
 
 
+ <%
+=begin%>
  <%= form_with url: geolocations_path do |form| %>
     <%= form.label :longitude %>
-    <%
-=begin%>
- <%= form.text_field :longitude, data:{'geolocation-target' => 'longitude'} %> 
-<%
-=end%>
-    <input data-geolocation-target="longitude" type="text" name="longitude" id="longitude">
+    <%= form.text_field :longitude, data:{'geolocation-target' => 'longitude'} %> 
+
     <%= form.label :latitude %>
     <%= form.text_field :latitude, data:{'geolocation-target' => 'latitude'} %>
 
     <%= form.submit %> 
-  <% end %>
+  <% end %> 
+<%
+=end%>
  
 </div>
 
