@@ -2,7 +2,7 @@ Rails.application.routes.draw do
  # devise_for :users
 
   resources :geolocations
-  # resources :trips
+  resources :trips
   # Controller: StaticPages
   get 'contact', to: 'static_pages#contact', as: 'contact'
   get 'features', to: 'static_pages#features', as: 'features'
