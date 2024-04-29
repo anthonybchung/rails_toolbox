@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  driver: MyString
+  teacher: MyString
+  odometre_start: 1
+  odometre_end: 1
+  time_start: 2024-04-29 14:26:01
+  time_end: 2024-04-29 14:26:01
+
+two:
+  driver: MyString
+  teacher: MyString
+  odometre_start: 1
+  odometre_end: 1
+  time_start: 2024-04-29 14:26:01
+  time_end: 2024-04-29 14:26:01

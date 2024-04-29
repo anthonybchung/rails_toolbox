@@ -130,7 +130,7 @@ This ***Trip*** feature will assist me in logging all the required data.
 |suburbs | data type | |
 |:--- | :--- | :--- |
 |id |integer| Primary Key |
-|suburb | text |
+|name | string |
 | postcode | integer |
 | trip_id | integer | Foreign Key |
 
