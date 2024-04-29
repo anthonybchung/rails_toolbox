@@ -117,6 +117,27 @@ After making the geolocation work, we will now create a feature that will automa
 | trips | data type | |
 |:--- | :--- | :--- |
 | id |integer | Primary Key |
+| driver | string |
+| teacher | string |
+| odometre_start | int |
+| odometre_end | int |
+| time_start | time |
+| time_end | time |
+
+### Trip has_many suburbs
+|suburbs | data type | |
+|:--- | :--- | :--- |
+|id |integer| Primary Key |
+|suburb | text |
+| postcode | integer |
+| trip_id | Foreign Key |
+
+When a row in Trip gets destroyed, all the rows of all the associated Suburb model needs to be destroyed as well.
+
+```ruby
+has_many :suburbs, dependent: :destroy
+```
+
 
 
 
