@@ -130,7 +130,7 @@ After making the geolocation work, we will now create a feature that will automa
 |id |integer| Primary Key |
 |suburb | text |
 | postcode | integer |
-| trip_id | Foreign Key |
+| trip_id | integer | Foreign Key |
 
 When a row in Trip gets destroyed, all the rows of all the associated Suburb model needs to be destroyed as well.
 
