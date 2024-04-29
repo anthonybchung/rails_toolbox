@@ -100,6 +100,18 @@ geolocate(){
 ### Form: Geolocation
 
 I will create a form that will pass the geo position to the controller and the controller will return the suburb I am in using ***Geocoder***
+Used flase[:suburb] to pass variable between actions.
+
+# Trip
+
+After making the geolocation work, we will now create a feature that will automatically request the current trip's position and send it back to the database(backend).
+
+## Process.
+
+- Every 5 mins stimulus will ask the geolocation API for geolocation and send it to the controller.
+- The controller will use the geolocation to find the suburb.
+- If the suburb is not the same. Then it will store is in the database.
+
 
 
 
