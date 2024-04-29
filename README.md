@@ -104,10 +104,18 @@ Used flase[:suburb] to pass variable between actions.
 
 # Trip: Learner driver's log book
 
-A learner driver needs to log their driving time, car's odometer before and after a drive, and the suburbs they travel through.
+A learner driver needs to log the following into their log book:
+
+- driving time
+- odometre before a drive
+- odometre after a drive
+- suburbs traveled through.
+
 This ***Trip*** feature will assist me in logging all the required data.
 
 ## Process.
+
+### Minimum Viable Product
 
 - Every 2 mins stimulus will ask the geolocation API for geolocation and send it to the controller.
 - The controller will use the geolocation to find the suburb.
