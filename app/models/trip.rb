@@ -1,3 +1,3 @@
 class Trip < ApplicationRecord
-  has_many :suburbs, dependent: :destory
+  has_many :suburbs, dependent: :destroy
 end
