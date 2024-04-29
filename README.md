@@ -112,6 +112,12 @@ After making the geolocation work, we will now create a feature that will automa
 - The controller will use the geolocation to find the suburb.
 - If the suburb is not the same. Then it will store is in the database.
 
+## Model: Trip
+
+| trips | data type | |
+|:--- | :--- | :--- |
+| id |integer | Primary Key |
+
 
 
 
