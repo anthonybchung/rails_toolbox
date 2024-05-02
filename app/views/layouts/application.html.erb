@@ -27,6 +27,13 @@
           <li class='text-secondary my-6 mx-4 text-right md:inline-block md:my-0'> <%= link_to_unless_current 'Contact', contact_path, class: 'text-text'%> </li>
           <li class='text-secondary my-6 mx-4 text-right md:inline-block md:my-0'> <%= link_to_unless_current 'Geolocation', geolocations_path, class: 'text-text' %> </li>
           <li class='text-secondary my-6 mx-4 text-right md:inline-block md:my-0'> <%= link_to_unless_current 'Trip', trips_path, class: 'text-text' %></li>
+          <li class='text-secondary my-6 mx-4 text-right md:inline-block md:my-0'>
+            <% if user_signed_in? %>
+              <%= link_to 'Sign Out', destroy_user_session_path, data: {turbo_method: :delete}, class: 'text-text' %>
+            <% else %>
+              <%= link_to_unless_current 'Sign In', new_user_session_path, class: 'text-text' %>
+            <%end %>
+          </li>
         </ul>
       </nav>
     </header>

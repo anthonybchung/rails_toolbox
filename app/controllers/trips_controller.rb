@@ -1,4 +1,6 @@
 class TripsController < ApplicationController
+  before_action :authenicate_user!, only: [:new]
+  
   def index
   end
 
