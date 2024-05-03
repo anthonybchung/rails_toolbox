@@ -1,4 +1,18 @@
 <div>
   <h1 class="font-bold text-4xl">Trips#new</h1>
-  <p>Find me in app/views/trips/new.html.erb</p>
+  <%= form_with model: @trip do |form| %>
+    <div class='block relative my-6 md:w-1/2'>
+      <%= form.text_field :driver, class: 'rounded bg-tertiary w-full' %>
+      <%= form.label :driver, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
+    </div>
+    <div class='block'>
+      <%= form.label :teacher %>
+      <%= form.text_field :teacher %>
+    </div>
+    <div class='block'>
+      <%= form.label :odometre_start %>
+      <%= form.number_field :odometre_start %>
+    </div>
+  <% end %>
+  <h2> Hello world </h2>
 </div>
