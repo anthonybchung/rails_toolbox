@@ -1,18 +1,17 @@
-<div>
-  <h1 class="font-bold text-4xl">Trips#new</h1>
+<div class='h-full'>
+  <h1 class="font-bold text-4xl">New Trip</h1>
   <%= form_with model: @trip do |form| %>
     <div class='block relative my-6 md:w-1/2'>
       <%= form.text_field :driver, class: 'rounded bg-tertiary w-full' %>
       <%= form.label :driver, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
     </div>
-    <div class='block'>
-      <%= form.label :teacher %>
-      <%= form.text_field :teacher %>
+    <div class='block relative my-6 md:w-1/2'>
+      <%= form.text_field :teacher,class: 'rounded bg-tertiary w-full' %>
+      <%= form.label :teacher, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
     </div>
-    <div class='block'>
-      <%= form.label :odometre_start %>
-      <%= form.number_field :odometre_start %>
+    <div class='block relative my-6 md:w-1/2'>
+      <%= form.number_field :odometre_start, class: 'rounded bg-tertiary w-full' %>
+      <%= form.label :odometre_start, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
     </div>
   <% end %>
-  <h2> Hello world </h2>
 </div>
