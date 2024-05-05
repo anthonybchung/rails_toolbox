@@ -39,7 +39,7 @@ application.html.erb contains 3 sections:
 - main: all the features of the webapp
 - footer: links to faq, contacts, etc.
 
-| ![application_mobile](https://github.com/anthonybchung/rails_toolbox/assets/99620815/780eff66-5e16-40fa-bf92-03f12276a772) |![application_desktop](https://github.com/anthonybchung/toolbox/assets/99620815/b1c968d1-5616-43b3-a30a-d086381a820e)|
+| ![application_mobile](https://github.com/anthonybchung/rails_toolbox/assets/99620815/780eff66-5e16-40fa-bf92-03f12276a772) | ![application_desktop](https://github.com/anthonybchung/rails_toolbox/assets/99620815/e98b81a8-2d95-4050-b10f-e1f3c63ad8cd) |
 | :---: | :---: |
 | Mobile | Desktop |
 
