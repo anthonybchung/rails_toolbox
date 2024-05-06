@@ -34,6 +34,6 @@ class TripsController < ApplicationController
   private
 
   def new_trip_params
-    params.require(:trip).permit(:driver,:teacher,:odometre_start)
+    params.require(:trip).permit(:driver,:teacher,:odometre_start,:tracking_interval)
   end
 end

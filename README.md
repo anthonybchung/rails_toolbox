@@ -147,6 +147,14 @@ delegate  :name,
 | :--- | :--- |
 | trips/index.html.erb | trips/new.html.erb |
 
+We need to add an extra field to table trips. "tracking_internal"
+
+```console
+rails generate migration AddTrackingIntervalToTrips tracking_interval:integer
+```
+
+After creating/saving the trip. The user should be directed to suburbs/new.html.erb. This will allow us to log(ie create) new suburb for the trip.
+
 
 
 

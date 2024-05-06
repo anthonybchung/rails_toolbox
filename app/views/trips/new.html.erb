@@ -2,16 +2,20 @@
   <h1 class="font-bold text-4xl">New Trip</h1>
   <%= form_with model: @trip do |form| %>
     <div class='block relative my-6 md:w-1/2'>
-      <%= form.text_field :driver, class: 'rounded bg-tertiary w-full' %>
+      <%= form.text_field :driver, class: 'rounded bg-tertiary w-full', placeholder: "Driver's name" %>
       <%= form.label :driver, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
     </div>
     <div class='block relative my-6 md:w-1/2'>
-      <%= form.text_field :teacher,class: 'rounded bg-tertiary w-full' %>
+      <%= form.text_field :teacher,class: 'rounded bg-tertiary w-full', placeholder: "Teacher's name" %>
       <%= form.label :teacher, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
     </div>
     <div class='block relative my-6 md:w-1/2'>
-      <%= form.number_field :odometre_start, class: 'rounded bg-tertiary w-full' %>
+      <%= form.number_field :odometre_start, class: 'rounded bg-tertiary w-full', placeholder: "Odometre reading at start of trip" %>
       <%= form.label :odometre_start, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
+    </div>
+    <div class='block relative my-6 md:w-1/2'>
+      <%= form.number_field :track_interval, class: 'rounded bg-tertiary w-full', placeholder: 'Enter time in minutes' %>
+      <%= form.label :track_interval, class: 'absolute -top-3 left-2 bg-tertiary px-2' %>
     </div>
     <div>
       <%= form.submit class: 'btn-primary' %>
