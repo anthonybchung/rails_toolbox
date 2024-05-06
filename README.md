@@ -143,15 +143,9 @@ delegate  :name,
 ```
 
 ### Trips wireframe
-| ![trip_index](https://github.com/anthonybchung/rails_toolbox/assets/99620815/0614adb6-b6b1-4573-b55b-676c74c56f55) |
-| :--- |
-| trips/index.html.erb |
-
-After clicking on the add button, it will direct to new.html.erb
-
-| ![new_trip](https://github.com/anthonybchung/rails_toolbox/assets/99620815/8ecbcfdd-da70-4966-af14-4c27e3c6a9cb) |
-| :--- |
-| trips/new.html.erb |
+| ![trip_index](https://github.com/anthonybchung/rails_toolbox/assets/99620815/0614adb6-b6b1-4573-b55b-676c74c56f55) |![new_trip](https://github.com/anthonybchung/rails_toolbox/assets/99620815/8ecbcfdd-da70-4966-af14-4c27e3c6a9cb) |
+| :--- | :--- |
+| trips/index.html.erb | trips/new.html.erb |
 
 
 
