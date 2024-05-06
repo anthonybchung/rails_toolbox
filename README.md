@@ -124,24 +124,6 @@ This ***Trip*** feature will assist me in logging all the required data.
 
 ## Model: Trip
 
-| trips | data type | |
-|:--- | :--- | :--- |
-| id |integer | Primary Key |
-| driver | string |
-| teacher | string |
-| odometre_start | int |
-| odometre_end | int |
-| time_start | time |
-| time_end | time |
-
-### Trip has_many suburbs
-|suburbs | data type | |
-|:--- | :--- | :--- |
-|id |integer| Primary Key |
-|name | string |
-| postcode | integer |
-| trip_id | integer | Foreign Key |
-
 | ![trip-suburbs-ER](https://github.com/anthonybchung/rails_toolbox/assets/99620815/3b53b9c3-d156-4299-a75a-e1c9ad2ac1b0) |
 |:--- |
 | Trip Suburb Association |
