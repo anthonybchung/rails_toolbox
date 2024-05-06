@@ -155,6 +155,10 @@ rails generate migration AddTrackingIntervalToTrips tracking_interval:integer
 
 After creating/saving the trip. The user should be directed to suburbs/new.html.erb. This will allow us to log(ie create) new suburb for the trip.
 
+| ![new_suburbs](https://github.com/anthonybchung/rails_toolbox/assets/99620815/b28a4774-ab9a-4358-b4c5-6778c4bfb956) |
+|:--- |
+| suburbs/new.html.erb |
+
 
 
 
