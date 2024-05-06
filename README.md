@@ -134,6 +134,14 @@ When a row in Trip gets destroyed, all the rows of all the associated Suburb mod
 has_many :suburbs, dependent: :destroy
 ```
 
+***Law of Demeter:*** make sure the rows of Suburb are delegated to Trip
+
+```ruby
+delegate  :name,
+          :postcode, 
+          to: :trip, prefix: true
+```
+
 ### index.html.erb wireframe
 ![trip_index](https://github.com/anthonybchung/rails_toolbox/assets/99620815/0614adb6-b6b1-4573-b55b-676c74c56f55)
 
