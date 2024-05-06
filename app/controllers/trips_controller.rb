@@ -1,5 +1,5 @@
 class TripsController < ApplicationController
-  before_action :authenticate_user!, only: [:new]
+  before_action :authenticate_user!, only: [:new, :create,:edit,:update,:destroy]
   
   def index
   end
@@ -13,6 +13,7 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.new(new_trip_params)
+    puts @trip.attributes
 
     if @trip.save
       redirect_to @trip
