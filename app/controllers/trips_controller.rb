@@ -12,6 +12,14 @@ class TripsController < ApplicationController
   end
 
   def create
+    @trip = Trip.new(new_trip_params)
+
+    if @trip.save
+      redirect_to @trip
+    else
+      render :new, status: :unprocessable_entity
+    end
+
   end
 
   def edit
@@ -21,5 +29,11 @@ class TripsController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+
+  def new_trip_params
+    params.require(:trip).permit(:driver,:teacher,:odometre_start)
   end
 end
