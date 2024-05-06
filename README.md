@@ -149,7 +149,7 @@ delegate  :name,
 
 After clicking on the add button, it will direct to new.html.erb
 
-| |
+| ![new_trip](https://github.com/anthonybchung/rails_toolbox/assets/99620815/8ecbcfdd-da70-4966-af14-4c27e3c6a9cb) |
 | :--- |
 | trips/new.html.erb |
 
