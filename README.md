@@ -142,6 +142,10 @@ This ***Trip*** feature will assist me in logging all the required data.
 | postcode | integer |
 | trip_id | integer | Foreign Key |
 
+| ![trip-suburbs-ER](https://github.com/anthonybchung/rails_toolbox/assets/99620815/3b53b9c3-d156-4299-a75a-e1c9ad2ac1b0) |
+|:--- |
+| Trip Suburb Association |
+
 When a row in Trip gets destroyed, all the rows of all the associated Suburb model needs to be destroyed as well.
 
 ```ruby
