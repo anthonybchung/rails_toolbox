@@ -7,11 +7,17 @@ class SuburbsController < ApplicationController
   end
 
   def create
-    @suburb = Suburb.new(geolocation_params)
-    puts '**********'
-    puts "latitude: #{@suburb.latitude}"
-    puts "longitude: #{@suburb.longitude}"
-    puts "trip_id: #{@suburb.trip_id}"
+    @suburb = Suburb.new
+    @geolocation_trip = GeolocationTrip.new(geolocation_params)
+    @suburb.trip_id = geolocation_params[:trip_id]
+    @suburb.name = @geolocation_trip.suburb
+    
+    if @geolocation_trip.can_save?
+      @suburb.save
+    end
+
+    
+    
   end
 
   private

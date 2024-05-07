@@ -4,10 +4,10 @@
 <div data-controller='geolocation'>
   <%= form_with model: @geolocation_trip, url: suburbs_path do |form|%>
     <div>
-      <%= form.number_field :longitude, data:{'geolocation-target' => 'longitude'} %>
+      <%= form.number_field :longitude, data:{'geolocation-target' => 'longitude'}, step:'0.0000001' %>
     </div>
     <div>
-      <%= form.number_field :latitude, data:{'geolocation-taget' => 'latitude'} %>
+      <%= form.number_field :latitude, data:{'geolocation-taget' => 'latitude'}, step: '0.0000001' %>
     </div>
     <div>
       <%= form.hidden_field :trip_id %>
