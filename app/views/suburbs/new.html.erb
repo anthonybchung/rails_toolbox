@@ -1,2 +1,19 @@
 <h1>Current Trip </h1>
-<h2> Trip ID: <%= @%>
+<h2> Trip ID: <%= @geolocation_trip.trip_id %> </h2>
+
+<div data-controller='geolocation'>
+  <%= form_with model: @geolocation_trip, url: suburbs_path do |form|%>
+    <div>
+      <%= form.number_field :longitude, data:{'geolocation-target' => 'longitude'} %>
+    </div>
+    <div>
+      <%= form.number_field :latitude, data:{'geolocation-taget' => 'latitude'} %>
+    </div>
+    <div>
+      <%= form.hidden_field :trip_id %>
+    </div>
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>

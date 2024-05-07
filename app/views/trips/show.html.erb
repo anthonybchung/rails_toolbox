@@ -1,6 +1,9 @@
 <div>
   <h1 class="font-bold text-4xl">Trips#show</h1>
-  <h2><%= @trip.driver %> </h1>
-  <h2><%= @trip.odometre_start %> </h2>
-  <h2><%= @trip.tracking_interval %> </h2>
+  <h2>Driver: <%= @trip.driver %> </h1>
+  <h2>Odometre Start: <%= @trip.odometre_start %> </h2>
+  <h2>Tracking Interval: <%= @trip.tracking_interval %> </h2>
+  <div>
+    <%= link_to 'Record', new_suburb_path(id: @trip.id), class: 'btn-primary' %>
+  </div>
 </div>

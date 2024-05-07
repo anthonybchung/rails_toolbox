@@ -164,6 +164,14 @@ After creating/saving the trip. The user will be directed to trips/show/:id. The
 |:--- | :--- |
 | trip/show.html.erb | suburbs/new.html.erb |
 
+### Action Model: GeolocationTrip
+
+I want to have a class that contains the following attributes:
+
+- latitude
+- longitude
+- trip_id
+
 
 
 

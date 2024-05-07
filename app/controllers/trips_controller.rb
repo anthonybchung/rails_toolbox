@@ -5,7 +5,7 @@ class TripsController < ApplicationController
   end
 
   def show
-    @trip = Trip.first
+    @trip = Trip.find(params[:id])
   end
 
   def new
@@ -14,8 +14,6 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.new(new_trip_params)
-    puts @trip.attributes
-
     if @trip.save
       redirect_to trip_path(@trip)
     else
