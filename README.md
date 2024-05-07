@@ -160,9 +160,9 @@ After creating/saving the trip. The user will be directed to trips/show/:id. The
 | Create a row of suburb |
 
 
-|![show_trip](https://github.com/anthonybchung/rails_toolbox/assets/99620815/63776d9f-46ad-4959-81cc-a55d4c0097a0) |
-|:--- |
-| trip/show.html.erb |
+|![show_trip](https://github.com/anthonybchung/rails_toolbox/assets/99620815/63776d9f-46ad-4959-81cc-a55d4c0097a0) | ![new_suburbs ](https://github.com/anthonybchung/rails_toolbox/assets/99620815/7a8431e1-fc30-42ae-b0f3-645bd7ae2e8e) |
+|:--- | :--- |
+| trip/show.html.erb | suburbs/new.html.erb |
 
 
 
