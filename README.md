@@ -153,7 +153,12 @@ We need to add an extra field to table trips. "tracking_internal"
 rails generate migration AddTrackingIntervalToTrips tracking_interval:integer
 ```
 
-After creating/saving the trip. The user should be directed to suburbs/new.html.erb. This will allow us to log(ie create) new suburb for the trip.
+After creating/saving the trip. The user will be directed to trips/show/:id. There should be a button that will link to suburbs/new/ to record the geolocation. Thereafter, the geolocation is submitted to the backend(suburbs#create). Inside the create action, geocoder will determine the ***suburb*** and ***postcode***. Once the location is saved, it is redirected to trips/show/:id.
+
+| ![Record Geolocation process](https://github.com/anthonybchung/rails_toolbox/assets/99620815/f39d8508-d0de-408c-ac86-0da18520d7ec) |
+| :--- |
+| Create a row of suburb |
+
 
 | ![new_suburbs](https://github.com/anthonybchung/rails_toolbox/assets/99620815/b28a4774-ab9a-4358-b4c5-6778c4bfb956) |
 |:--- |
