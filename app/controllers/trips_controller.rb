@@ -1,10 +1,11 @@
 class TripsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create,:edit,:update,:destroy]
+  before_action :authenticate_user!, only: [:new, :create,:show,:edit,:update,:destroy]
   
   def index
   end
 
   def show
+    @trip = Trip.first
   end
 
   def new
@@ -16,7 +17,7 @@ class TripsController < ApplicationController
     puts @trip.attributes
 
     if @trip.save
-      redirect_to @trip
+      redirect_to trip_path(@trip)
     else
       render :new, status: :unprocessable_entity
     end

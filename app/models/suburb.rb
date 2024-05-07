@@ -1,8 +1,8 @@
 class Suburb < ApplicationRecord
   belongs_to :trip
 
-  delegate  :name,
-            :postcode,
+  delegate  :driver,
+            :teacher,
             to: :trip,
             prefix: true
 end
