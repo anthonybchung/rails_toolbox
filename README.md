@@ -160,7 +160,7 @@ After creating/saving the trip. The user will be directed to trips/show/:id. The
 | Create a row of suburb |
 
 
-| ![new_suburbs](https://github.com/anthonybchung/rails_toolbox/assets/99620815/b28a4774-ab9a-4358-b4c5-6778c4bfb956) |
+|![show_trip](https://github.com/anthonybchung/rails_toolbox/assets/99620815/63776d9f-46ad-4959-81cc-a55d4c0097a0) |
 |:--- |
 | suburbs/new.html.erb |
 
