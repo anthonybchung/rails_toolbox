@@ -162,7 +162,8 @@ After creating/saving the trip. The user will be directed to trips/show/:id. The
 
 |![show_trip](https://github.com/anthonybchung/rails_toolbox/assets/99620815/63776d9f-46ad-4959-81cc-a55d4c0097a0) |
 |:--- |
-| suburbs/new.html.erb |
+| trip/show.html.erb |
+
 
 
 
