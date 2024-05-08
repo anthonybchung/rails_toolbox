@@ -188,6 +188,13 @@ SuburbController will use these data and pass it to the database.
 
 Then the app will be redirected to trip/show.html.erb with the trip details along with all the suburbs or postcode.
 
+### Automate recording.
+
+#### /trips/show.html.erb
+
+If the suburbs.size is 0 then show start button, that will start the recording
+else show a recording button (pulsing) that will be auto clicked according to the interval set.
+
 
 
 
