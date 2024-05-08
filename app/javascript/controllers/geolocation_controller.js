@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="geolocation"
 export default class extends Controller {
 
-  static targets = ["position","longitude","latitude"]
+  static targets = ["position","longitude","latitude","form"]
   connect() {
     console.log("geolocation connected")
   }
@@ -22,6 +22,9 @@ export default class extends Controller {
 
       this.longitudeTarget.value = longitude
       this.latitudeTarget.value = latitude
+      console.log("pressed submit")
+      this.formTarget.submit()
+     
   }
 
 

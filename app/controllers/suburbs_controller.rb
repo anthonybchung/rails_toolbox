@@ -11,7 +11,6 @@ class SuburbsController < ApplicationController
     @geolocation_trip = GeolocationTrip.new(geolocation_params)
     @suburb.trip_id = geolocation_params[:trip_id]
     @suburb.name = @geolocation_trip.suburb
-    
     if @geolocation_trip.can_save?
       @suburb.save
     end

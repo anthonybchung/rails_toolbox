@@ -2,18 +2,18 @@
 <h2> Trip ID: <%= @geolocation_trip.trip_id %> </h2>
 
 <div data-controller='geolocation'>
-  <%= form_with model: @geolocation_trip, url: suburbs_path do |form|%>
+ <button data-action='click->geolocation#geolocate'>Get Location </button>
+
+  <%= form_with model: @geolocation_trip, url: suburbs_path, data: {'geolocation-target'=> "form"} do |form|%>
     <div>
       <%= form.number_field :longitude, data:{'geolocation-target' => 'longitude'}, step:'0.0000001' %>
     </div>
     <div>
-      <%= form.number_field :latitude, data:{'geolocation-taget' => 'latitude'}, step: '0.0000001' %>
+      <%= form.number_field :latitude, data:{'geolocation-target' => 'latitude'}, step: '0.0000001' %>
     </div>
     <div>
       <%= form.hidden_field :trip_id %>
     </div>
-    <div>
-      <%= form.submit %>
-    </div>
+    <%= form.submit %>
   <% end %>
-</div>
+</div>  
