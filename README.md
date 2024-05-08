@@ -16,6 +16,14 @@ I will use the following for my ROR
   rails new toolbox --database=postgresql --javascript=esbuild --css=tailwind
 ```
 
+## Procfile
+
+Create a new Procfile for Heroku, insert the following line
+
+```
+web: bundle exec puma -C config/puma.rb
+```
+
 ## Setup Tailwind theme in tailwind.config.js
 
 ```javascript
