@@ -180,7 +180,13 @@ I want to have a class that contains the following attributes:
 - longitude
 - trip_id
 
+We use stimulus to capture the geolocation and post it to the backend(SuburbController) using the active model GeolocationTrip.
 
+Geocoder, inside GeolocationTrip, will work out the Suburb's name and postcode and store it in the database if the previous suburb is not equal to the current suburb.
+
+SuburbController will use these data and pass it to the database.
+
+Then the app will be redirected to trip/show.html.erb with the trip details along with all the suburbs or postcode.
 
 
 

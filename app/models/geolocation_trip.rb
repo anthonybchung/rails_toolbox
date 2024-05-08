@@ -9,7 +9,11 @@ class GeolocationTrip
 
   def can_save?
     trip = Trip.find(trip_id)
-    last_suburb = trip.suburbs.last.name
+    if trip.suburbs.size != 0
+      last_suburb = trip.suburbs.last.name
+    else
+      last_suburb = nil
+    end
     return true if last_suburb != self.suburb
     return false
 
