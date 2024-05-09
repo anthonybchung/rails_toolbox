@@ -10,6 +10,14 @@
     <% end %>
   </ul>
   <div>
+
     <%= link_to 'Record', new_suburb_path(id: @trip.id), class: 'btn-primary' %>
+    <%= link_to 'Recording', 
+                new_suburb_path(id: @trip.id), 
+                class: 'btn-primary', 
+                data: { controller: "autosuburbrecord",
+                        "autosuburbrecord-target"=> "recordingButton"
+                } 
+    %>
   </div>
 </div>
