@@ -195,7 +195,9 @@ Then the app will be redirected to trip/show.html.erb with the trip details alon
 If the suburbs.size is 0 then show start button, that will start the recording
 else show a recording button (pulsing) that will be auto clicked according to the interval set.
 
-
+| ![start-recording](https://github.com/anthonybchung/rails_toolbox/assets/99620815/12be7f7c-f99d-47ce-b995-bdc35f7de598) |
+| :--- |
+| Start recording |
 
 
 
