@@ -9,4 +9,18 @@
       <% end %>
     <section>
   <% end %>
+
+  <% @trips.each do |trip| %>
+    <li><%= trip.created_at %> 
+        <%= link_to "Destroy", 
+            trip_path(trip), 
+            data: {
+              turbo_method: :delete,
+              turbo_confirm: "Are you sure?"
+            }
+        %>
+    </li>
+  <% end %>
+
+  <p>Test </p>
 </div>

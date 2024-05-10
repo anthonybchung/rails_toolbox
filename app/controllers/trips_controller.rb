@@ -2,6 +2,7 @@ class TripsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create,:show,:edit,:update,:destroy]
   
   def index
+    @trips = Trip.all
   end
 
   def show
@@ -29,6 +30,10 @@ class TripsController < ApplicationController
   end
 
   def destroy
+    @trip = Trip.find(params[:id])
+    @trip.destroy
+
+    redirect_to trips_path
   end
 
   private
