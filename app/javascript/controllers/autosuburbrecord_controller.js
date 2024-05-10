@@ -17,9 +17,9 @@ export default class extends Controller {
     setTimeout(()=>{
       console.log("inside set timeout")
       this.activateButton()
-    },180000)
+    },120000)
     console.log("activated after 3 mins")
-    // 3mins = 3 * 60 * 1000 = 180000
+    // 3mins = 2 * 60 * 1000 = 120000
   }
   
 
