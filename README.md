@@ -200,6 +200,15 @@ else show a recording button (pulsing) that will be auto clicked according to th
 | Start recording |
 
 
+## REFACTOR THE TRIP: Resource Focus, NOT Action Focus.
+
+We ran into a wall, sometimes we want to browse the data without the auto-recording(javascript) running on the page. So, we need to split the Trip resource into 2 resources.
+
+- ***Trip:*** User can browse the data
+- ***AutoTrip:*** used to enter the geolocation automatically.
+
+
+
 
 
 
