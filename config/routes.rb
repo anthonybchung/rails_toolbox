@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   resources :geolocations
   resources :trips
-  resources :suburbs
+  resources :auto_trip, only: :show
+  resources :suburbs, only: [:new, :create]
   # Controller: StaticPages
   get 'contact', to: 'static_pages#contact', as: 'contact'
   get 'features', to: 'static_pages#features', as: 'features'

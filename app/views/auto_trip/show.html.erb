@@ -1,0 +1,22 @@
+<div data-controller="autosuburbrecord">
+  <hgroup>
+    <h1>Driver: <%= @trip.driver %></h1>
+    <h2>Odometre Start: <%= @trip.odometre_start %></h2>
+    <h2>Time Interval: <span data-autosuburbrecord-target="timeInterval">1</span></h2>
+  </hgroup>
+  <div class='flex flex-row justify-end my-4'>
+    <%= link_to 'Stop Recording', trip_path(id: @trip.id), class: 'btn-primary mx-2 animate-pulse' %>
+    <%= link_to 'Get Position now', new_suburb_path(id: @trip.id), 
+                class: 'btn-primary mx-2', 
+                data: {
+                  "autosuburbrecord-target" => "recordingButton" 
+                } %>
+  </div>
+  <hr class="border-t-2 border-primary">
+  <h2 class="my-4"> Suburbs Traveled </h2>
+  <ul>
+    <% @trip.suburbs.each do |suburb|%>
+      <li> <%= suburb.name %></li>
+    <% end %>
+  </ul>
+</div>

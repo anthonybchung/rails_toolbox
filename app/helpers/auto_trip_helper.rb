@@ -1,0 +1,2 @@
+module AutoTripHelper
+end

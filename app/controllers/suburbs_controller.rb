@@ -14,7 +14,7 @@ class SuburbsController < ApplicationController
     if @geolocation_trip.can_save?
       @suburb.save
     end
-    redirect_to trip_path(@suburb.trip_id)
+    redirect_to auto_trip_path(@suburb.trip_id)
     
     
   end

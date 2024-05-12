@@ -1,23 +1,22 @@
 <div>
-  <h1 class="font-bold text-4xl">Trips#show</h1>
-  <h2>Driver: <%= @trip.driver %> </h1>
-  <h2>Odometre Start: <%= @trip.odometre_start %> </h2>
-  <h2>Tracking Interval: <%= @trip.tracking_interval %> </h2>
-
+  <hgroup>
+    <h1>Driver: <%= @trip.driver %></h1>
+    <h2>Odometre Start: <%= @trip.odometre_start %></h2>
+    <h2>Tracking Interval: <%= @trip.tracking_interval %></h2>
+  </hgroup>
+  <div class='flex flex-row justify-end my-4'>
+    <%= link_to 'Edit', edit_trip_path(id: @trip.id), class: 'btn-primary mx-2' %>
+    <% if @trip.suburbs.size == 0 %>
+      <%= link_to 'Start Recording', auto_trip_path(id: @trip.id), class: 'btn-primary mx-2' %>
+    <% else %>
+      <%= link_to 'Resume Recording', auto_trip_path(id: @trip.id), class: 'btn-primary mx-2' %>
+    <% end %>
+  </div>
+  <hr class="border-t-2 border-primary">
+  <h2 class="my-4"> Suburbs Traveled </h2>
   <ul>
     <% @trip.suburbs.each do |suburb|%>
       <li> <%= suburb.name %></li>
     <% end %>
   </ul>
-  <div>
-
-    <%= link_to 'Record', new_suburb_path(id: @trip.id), class: 'btn-primary' %>
-    <%= link_to 'Recording', 
-                new_suburb_path(id: @trip.id), 
-                class: 'btn-primary', 
-                data: { controller: "autosuburbrecord",
-                        "autosuburbrecord-target"=> "recordingButton"
-                } 
-    %>
-  </div>
 </div>
