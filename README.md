@@ -207,7 +207,9 @@ We ran into a wall, sometimes we want to browse the data without the auto-record
 - ***Trip:*** User can browse the data
 - ***AutoTrip:*** used to enter the geolocation automatically.
 
-
+| ![Refactor Trips](https://github.com/anthonybchung/rails_toolbox/assets/99620815/6e9f4a32-e575-4416-a49e-36e9c3636c13) |
+|:--- |
+|Trips and AutoTrips |
 
 
 
