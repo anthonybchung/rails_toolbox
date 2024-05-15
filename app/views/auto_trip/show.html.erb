@@ -5,7 +5,11 @@
     <h2>Time Interval: <span data-autosuburbrecord-target="timeInterval">1</span></h2>
   </hgroup>
   <div class='flex flex-row justify-end my-4'>
-    <%= link_to 'Stop Recording', trip_path(id: @trip.id), class: 'btn-primary mx-2 animate-pulse' %>
+    <%= link_to 'Stop Recording', trip_path(id: @trip.id), 
+                class: 'btn-primary mx-2 animate-pulse',
+                data: {
+                  action: "click->autosuburbrecord#clearLogTimer"
+                } %>
     <%= link_to 'Get Position now', new_suburb_path(id: @trip.id), 
                 class: 'btn-primary mx-2', 
                 data: {

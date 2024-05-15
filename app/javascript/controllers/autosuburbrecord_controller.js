@@ -3,9 +3,20 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="autosuburbrecord"
 export default class extends Controller {
   static targets = ["recordingButton","timeInterval"]
+  static interval
+  static logTimer
+  
   connect() {
     console.log('activation button connected')
+    this.interval = this.timeIntervalTarget.textContent * 60 * 1000
+    this.logTimer = setTimeout(()=>{this.activateButton()},this.interval)
     this.activationPeriod()
+    console.log("connected")
+  }
+
+  clearLogTimer(){
+    console.log("clearTimeout")
+    clearTimeout(this.logTimer)
   }
 
   activateButton(){
@@ -14,14 +25,7 @@ export default class extends Controller {
   }
 
   activationPeriod(){
-    const interval = this.timeIntervalTarget.textContent * 60 * 1000
-    console.log(this.timeIntervalTarget.textContent)
-    setTimeout(()=>{
-      console.log("inside set timeout")
-      this.activateButton()
-    },interval)
-    console.log(`activated after ${interval} mins`)
-    // 3mins = 2 * 60 * 1000 = 120000
+    this.logtimer
   }
   
 

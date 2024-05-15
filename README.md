@@ -211,7 +211,13 @@ We ran into a wall, sometimes we want to browse the data without the auto-record
 |:--- |
 |Trips and AutoTrips |
 
+### clear setTimeout
 
+***NB:*** function with setTimeout still runs after clicking the stop recording button (which takes us back to the trips controller). We need the ***clearTimeout*** function to void the setTimeout.
+
+```javascript
+clearTimeout(logTimer)
+```
 
 
 
