@@ -219,5 +219,38 @@ We ran into a wall, sometimes we want to browse the data without the auto-record
 clearTimeout(logTimer)
 ```
 
+## HotWIRE STRADA.
 
+### Setup
 
+Follow the instruction via the following youtube link.
+***However: there are a few corrections***
+
+#### Adding library for hotwire in Gradle Scripts/build.gradle.kt(Module :app)
+
+Use the following line
+
+``` kotlin
+implementation("dev.hotwire:turbo:7.0.0-rc18")
+```
+
+### MainActivity: it is not activity_main
+
+``` kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.main_activity)
+
+        delegate = TurboActivityDelegate(this, R.id.main_nav_host)
+    }
+```
+
+### Localhost
+
+Make sure local host is the following
+
+```
+override val startLocation = "http://10.0.2.2:3000"
+```
+
+For apps hosted on heroku, we can just paste the url.
