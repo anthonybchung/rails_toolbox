@@ -254,3 +254,8 @@ override val startLocation = "http://10.0.2.2:3000"
 ```
 
 For apps hosted on heroku, we can just paste the url.
+
+|![android_studio](https://github.com/anthonybchung/rails_toolbox/assets/99620815/360dabbd-46fa-4ad9-b99d-05c82f14ffca) |
+
+| :--- |
+| Android Studio |
