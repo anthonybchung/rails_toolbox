@@ -18,7 +18,7 @@ I will use the following for my ROR
 
 ## Procfile
 
-Create a new Procfile for Heroku, insert the following line
+Create a ***new*** Procfile for Heroku, insert the following line
 
 ```
 web: bundle exec puma -C config/puma.rb
